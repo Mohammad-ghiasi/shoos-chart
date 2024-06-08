@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(251, 243, 232);
+    background-position: center;
+}
+.menubar{
+    padding: 8px 20px;
+    padding: 02px 6px;
+    margin: 0 !important;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 17px 1px rgb(204, 204, 204);
+    cursor: pointer;
+}
+.menu_item{
+    padding-top: 6px;
+}
+.optin{
+    position: absolute;
+    right: 8px;
+    display: flex;
+    align-items: center;
+}
+.user{
+    width: 40px;
+    height: 40px;
+    background: url('../images/image-avatar.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+#chart{
+    width: 450px;
+    background-color: rgb(232, 232, 232);
+    position: absolute;
+    z-index: 3;
+    top: 60px;
+    right: 50px;
+    display: none; 
+}
+.chart_img{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.chrt_info{
+    height: 70px;
+}
+.sub{
+    display: flex;
+    justify-content: center;
+}
+.show_chart button{
+    width: 70%;
+    padding: 6px;
+    border: none;
+    color: aliceblue;
+    background: rgb(255, 132, 0);
+    margin-top: 10px;
+    border-radius: 8px;
+}
+span i {
+    color: rgb(69, 69, 69);
+    font-size: 40px;
+    margin: 0 30px;
+}
+.menu_item ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 9px;
+}
+.menu_item ul li{
+    padding: 0 8px 8px 8px;
+}
+
+.optin span span{
+    font-size: 14px;
+    position: absolute;
+    border-radius: 50%;
+    background:rgb(255, 94, 0);
+    color: aliceblue;
+    height: 20px;
+    width: 15px;
+    right: 64px;
+    top: 2px;
+    text-align: center;
+    display: none;
+}
+.canvas{
+    height: 100vh;
+    background: rgb(216, 216, 216);
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    display: none;
+}
+.canvas_active{
+    display: block;
+}
+.canvas .side ul{
+    list-style: none;
+    padding: 0;
+}
+.canvas .side li{
+    margin: 5px 0;
+}
+
+.galley {
+    width: 500px;
+    padding: 0;
+}
+.bay_chart{
+    height: 500px;
+    width: 500px;
+    list-style: none;
+}
+.bay_chart p:first-child{
+    color: rgb(255, 111, 0);
+}
+.bay_chart  h1{
+    display: flex;
+    align-items: center;
+}
+.bay_chart  h1 span{
+    background: rgb(253, 224, 171);
+    font-size: 15px;
+    padding: 0 3px;
+    border-radius: 6px;
+    color: rgb(255, 111, 0);
+    margin-left: 20px;
+}
+.bay-box{
+    margin-top: 30px;
+}
+.bay-box div:first-child{
+    font-size: 19px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bay-box .add-cgart {
+    background: rgb(255, 111, 0);
+    font-size: 19px;
+    padding: 12px 0;
+    color: aliceblue;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.bay-box .add-cgart:hover, .sub button:hover{
+    opacity: .7;
+}
+#pluse:hover, #sub:hover{
+    color: rgb(255, 111, 0);
+}
+span i:hover{
+    color: rgb(255, 165, 0);
+}
+.user:hover{
+    border: 2px solid rgb(255, 166, 0);
+}
+.menu_item ul li:hover, .canvas .side li:hover{
+    color: rgb(255, 111, 0);
+}
+@media screen and (max-width: 800px) {
+    .menu_item{
+        display: none;
+    }
+    .menubar h2 span::before{
+        content: '☰';
+        padding-right: 5px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .carousel{
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #chart{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 430px) {
+    #chart{
+        right: 22px;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sneakers</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <div class="menubar d-flex align-items-center position-relative mt-2">
+          <div id="chart" class="p-3 shadow-lg">
+            <p id="p-select" class="pt-2">Chart :</p>
+            <hr class="m-0">
+            <div class="show_chart" id="show_chart">
+              <div class="row">
+                <div class="chart_img">
+                  <img src="images/image-product-1.jpg" class="w-100">
+                </div>
+                <div class="chrt_info col-md-10 col-9 p-2">
+                  <div class="trash float-end">
+                    <span id="remover" class="float-end fs-4"><i class="fa fa-trash-o"></i></span>
+                  </div>
+                  Fall Limited Edition Sneakers<br>
+                  $125.00 x <span id="count">0</span> &#160; &#160;<strong>$<span id="final">0</span></strong>
+                </div>
+              </div>
+              <div class="sub">
+                <button>Checkout</button>
+              </div>
+            </div>
+          </div>
+            <h2><span id="menu"></span>sneakers</h2>
+            <div class="menu_item">
+                <ul class="d-flex list-unstyled p-0">
+                    <li>Collections</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="optin position-absolute d-flex align-items-center">
+                <span id="chrrt_select"><i class="fa fa-shopping-bag fs-4"></i><span class="position-absolute text-center" id="counter">0</span></span>
+                <div class="user"></div>
+            </div>
+            <div class="canvas">
+                <div class="side">
+                    <h2 id="closer">sneakers</h2>
+                    <hr>
+                    <ul>
+                        <li>Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container" class="container mt-0 mt-md-5">
+            <div class="row justify-content-center">
+                <div class="galley">
+                    <div id="carouselExampleAutoplaying" class="carousel slide overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/image-product-1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/image-product-2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/image-product-3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/image-product-4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="bay_chart ms-0 ms-xl-5 pt-3 m-0 mt-xl-5">
+                  <p><strong>SNEAKER COMPANY</strong></p>
+                  <h1>Fall Limite Sneakers</h1>
+                  <p>These low-profile sneakers are youre prefect casual wear compainion. Featuring a durable rubble outer sole, they will withstand everything the weather can offer</p>
+                  <h1>$125.00  <span>50%</span></h1>
+                  <del>$250.00</del>
+                  <div class="bay-box row row-cols-1 row-cols-xl-2 px-3">
+                      <div class="">
+                        <div id="pluse" class="p-2"> + </div>
+                        <div class="p-2"> 0 </div>
+                        <div id="sub" class="p-2"> - </div>
+                      </div>
+                      <div id="sub-btn" class="add-cgart text-center mt-5 mt-xl-0"><i class="fa fa-shopping-bag me-3"></i>Add chart</div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/scrpt.js"></script>
+</body>
+</html>
